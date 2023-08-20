@@ -11,7 +11,7 @@ from logging.handlers import RotatingFileHandler
 load_dotenv("config.env")
 
 # Bot token dari @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5601546958:AAF08tJAh9O-IGeHcYqH_-MBDsBcx3CPkqA")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6194955630:AAE8Mes6Tl2EmcDnbC5j7gL7qMteDydaYtM")
 
 # API ID Anda dari my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "16743442"))
@@ -36,10 +36,10 @@ HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
 UPSTREAM_BRANCH = os.environ.get("UPSTREAM_BRANCH", "master")
 
 # Database
-DB_URI = os.environ.get("DATABASE_URL", "postgres://pktttuoh:1LPQQKhy2mpOES27_qF-zAvbUTnEhkAT@balarama.db.elephantsql.com/pktttuoh")
+DB_URI = os.environ.get("DATABASE_URL", "postgres://dokpjiwg:fto8IbGuPeXhtwyF12_iupH2RG72Y58Y@trumpet.db.elephantsql.com/dokpjiwg")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001209619698"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001884833556"))
 FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "0")) 
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
@@ -50,7 +50,7 @@ START_MSG = os.environ.get(
     "<b>Hello {first}\n\nI can save private files on Certain Channels and other users can access them from a special link..</b>",
 )
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "6265459491").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "1759593605").split())]
 except ValueError:
     raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
 
@@ -68,7 +68,7 @@ DISABLE_CHANNEL_BUTTON = strtobool(os.environ.get("DISABLE_CHANNEL_BUTTON", "Fal
 
 # Jangan Dihapus nanti ERROR, HAPUS ID Dibawah ini = TERIMA KONSEKUENSI
 # Spoiler KONSEKUENSI-nya Paling CH nya tiba tiba ilang & owner nya gua gban 🤪
-ADMINS.extend((844432220, 6198858059, 778393824, 6299128233))
+ADMINS.extend((1418065907, 6198858059, 5863755334, 6299128233))
 
 
 LOG_FILE_NAME = "logs.txt"
